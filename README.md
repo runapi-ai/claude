@@ -1,6 +1,23 @@
-# Claude API Skill for RunAPI
+<p align="center">
+  <a href="https://github.com/runapi-ai/claude">
+    <h3 align="center">Claude API Skill for RunAPI</h3>
+  </a>
+</p>
+
+<p align="center">
+  Configure existing Anthropic SDK clients to use Claude models on RunAPI.
+</p>
+
+<p align="center">
+  <a href="https://runapi.ai/models/claude.md"><strong>Model Reference</strong></a> · <a href="https://skills.sh/runapi-ai/claude"><strong>Install Skill</strong></a> · <a href="https://github.com/runapi-ai/claude"><strong>Skill Repo</strong></a> · <a href="https://runapi.ai/models.md"><strong>All Models</strong></a>
+</p>
+
+<div align="center">
 
 [![skills.sh](https://skills.sh/b/runapi-ai/claude)](https://skills.sh/runapi-ai/claude)
+
+</div>
+<br/>
 
 Call the Claude API through RunAPI with the official Anthropic SDK — point any
 Anthropic client at `https://runapi.ai`, keep your `claude-opus-*`,
