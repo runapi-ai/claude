@@ -16,8 +16,6 @@
 
 [![skills.sh](https://www.skills.sh/b/runapi-ai/claude)](https://www.skills.sh/runapi-ai/claude/claude)
 [![ClawHub](https://img.shields.io/badge/ClawHub-runapi--claude-111827)](https://clawhub.ai/runapi-ai/runapi-claude)
-[![Model Reference](https://img.shields.io/badge/Model%20Reference-runapi.ai-0f766e)](https://runapi.ai/models/claude)
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-skills.sh-2563eb)](https://www.skills.sh/runapi-ai)
 [![License](https://img.shields.io/github/license/runapi-ai/claude)](https://github.com/runapi-ai/claude/blob/main/LICENSE)
 
 </div>
