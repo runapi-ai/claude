@@ -12,17 +12,22 @@ The canonical agent file is `skills/claude/SKILL.md`.
 
 ## Install the skill
 
-Pick one:
-
-**A.** With [skills CLI](https://github.com/vercel-labs/skills):
-
 ```bash
 npx skills add runapi-ai/claude -g
 ```
 
-**B.** Or manually: clone this repo and copy `skills/claude/` into your agent's
-skills directory (for example `~/.claude/skills/` for Claude Code, or the
-`skills/` directory of a Codex / Gemini CLI plugin checkout).
+Or paste this prompt to your AI agent:
+
+```text
+Install the claude skill for me:
+
+1. Clone https://github.com/runapi-ai/claude
+2. Copy the skills/claude/ directory into your
+   user-level skills directory (e.g. ~/.claude/skills/
+   for Claude Code, ~/.codex/skills/ for Codex).
+3. Verify that SKILL.md is present.
+4. Confirm the install path when done.
+```
 
 ## Use the Claude API on RunAPI
 
