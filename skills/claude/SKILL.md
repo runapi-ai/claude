@@ -3,7 +3,7 @@ name: claude
 description: Call the Claude API (claude-opus, claude-sonnet, claude-haiku) through RunAPI using the official Anthropic SDK or any Anthropic-compatible client. Use when the user asks for Claude / Anthropic chat, streaming messages, multimodal vision input, tool use, extended thinking, or token counting, or when they want to point an existing Anthropic SDK setup at RunAPI as the base URL.
 documentation: https://runapi.ai/models/claude.md
 provider_page: https://runapi.ai/providers/anthropic.md
-catalog: https://runapi.ai/models
+catalog: https://runapi.ai/models.md
 metadata:
   openclaw:
     homepage: https://runapi.ai/models/claude
@@ -225,6 +225,5 @@ claude
 ## Routing
 
 - Model page: <https://runapi.ai/models/claude.md>
-- Claude API docs: <https://runapi.ai/docs#claude>
 - Provider page: <https://runapi.ai/providers/anthropic.md>
 - Catalog: <https://runapi.ai/models.md>
