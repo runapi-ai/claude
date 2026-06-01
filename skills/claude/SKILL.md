@@ -178,7 +178,7 @@ curl -X POST "https://runapi.ai/v1/messages/count_tokens" \
 ```
 
 Returns `{"input_tokens": <n>}`. Image blocks use a 512-token heuristic; for
-exact billed counts read `usage` from the actual `POST /v1/messages` response.
+exact response usage read `usage` from the actual `POST /v1/messages` response.
 
 ## List models
 
@@ -192,12 +192,13 @@ Returns Anthropic-compatible model objects.
 
 | Model ID | Use when |
 |---|---|
-| `claude-opus-4-7` | Strongest general model — agents, complex reasoning |
+| `claude-opus-4-8` | Strongest general model — agents, complex reasoning |
+| `claude-opus-4-7` | Previous Opus generation for stable workloads |
 | `claude-opus-4-6` | High-end reasoning workloads |
 | `claude-sonnet-4-6` | Balanced default for production chat |
 | `claude-opus-4-5-20251101` | Pin Opus 4.5 snapshot |
 | `claude-sonnet-4-5-20250929` | Pin Sonnet 4.5 snapshot (supports `include_thoughts`) |
-| `claude-haiku-4-5-20251001` | Highest throughput, lowest cost |
+| `claude-haiku-4-5-20251001` | Highest throughput lightweight model |
 
 Aliases auto-resolve to dated snapshots: `claude-opus-4-5`,
 `claude-sonnet-4-5`, `claude-haiku-4-5`.
@@ -219,7 +220,7 @@ claude
   send it on Opus or Haiku.
 - Pricing, rate limits, quotas — link to <https://runapi.ai/models/claude.md>,
   not this skill file.
-- For exact billed token counts read `usage` from the `POST /v1/messages`
+- For exact token usage read `usage` from the `POST /v1/messages`
   response, not from `/v1/messages/count_tokens`.
 
 ## Routing

@@ -112,12 +112,13 @@ claude
 
 | Model ID | Notes |
 |---|---|
-| `claude-opus-4-7` | Strongest general model |
+| `claude-opus-4-8` | Strongest general model |
+| `claude-opus-4-7` | Previous Opus generation |
 | `claude-opus-4-6` | High-end reasoning |
 | `claude-sonnet-4-6` | Balanced reasoning + speed |
 | `claude-opus-4-5-20251101` | Dated Opus 4.5 snapshot |
 | `claude-sonnet-4-5-20250929` | Dated Sonnet 4.5 snapshot |
-| `claude-haiku-4-5-20251001` | Fastest, lowest cost |
+| `claude-haiku-4-5-20251001` | Fastest lightweight snapshot |
 
 Aliases that resolve to the dated snapshots: `claude-opus-4-5`,
 `claude-sonnet-4-5`, `claude-haiku-4-5`.
