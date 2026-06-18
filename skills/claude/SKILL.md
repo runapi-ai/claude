@@ -192,6 +192,7 @@ Returns Anthropic-compatible model objects.
 
 | Model ID | Use when |
 |---|---|
+| `claude-fable-5` | Flagship — state-of-the-art coding, reasoning, and vision (1M context) |
 | `claude-opus-4-8` | Strongest general model — agents, complex reasoning |
 | `claude-opus-4-7` | Previous Opus generation for stable workloads |
 | `claude-opus-4-6` | High-end reasoning workloads |
