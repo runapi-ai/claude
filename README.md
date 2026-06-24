@@ -21,7 +21,7 @@
 </div>
 <br/>
 
-Call the Claude API through RunAPI with the official Anthropic SDK — point any
+Call the Claude API through RunAPI with the official Anthropic SDK -- point any
 Anthropic client at `https://runapi.ai`, keep your `claude-opus-*`,
 `claude-sonnet-*`, `claude-haiku-*` model strings, and pay through one RunAPI
 balance. This skill teaches Claude Code, Codex, Gemini CLI, Cursor, and 50+
@@ -100,6 +100,31 @@ curl -X POST "https://runapi.ai/v1/messages" \
 
 Get a RunAPI API Key at <https://runapi.ai/api_keys>.
 
+## Protocol compatibility
+
+Claude models can also be called from OpenAI-compatible Chat Completions,
+OpenAI-compatible Responses, and Gemini `contents` clients on RunAPI. Use
+those paths when an existing agent runtime already expects that request shape;
+for new Claude-specific code, prefer the Anthropic Messages setup above.
+
+```bash
+curl -X POST "https://runapi.ai/v1/chat/completions" \
+  -H "Authorization: Bearer YOUR_RUNAPI_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "claude-sonnet-4-6",
+    "messages": [{"role": "user", "content": "Hello, Claude!"}]
+  }'
+```
+
+```bash
+curl -X POST \
+  "https://runapi.ai/v1beta/models/claude-sonnet-4-6:streamGenerateContent" \
+  -H "x-goog-api-key: YOUR_RUNAPI_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"contents":[{"role":"user","parts":[{"text":"Hello, Claude!"}]}]}'
+```
+
 ## Connect Claude Code itself
 
 ```bash
@@ -137,6 +162,9 @@ Aliases that resolve to the dated snapshots: `claude-opus-4-5`,
   them in commits or shell history.
 - Stream long responses (`stream: true`) so the agent can release the
   terminal/IO loop early.
+- Default Claude-native integrations to the Anthropic Messages endpoint. Use
+  OpenAI-compatible or Gemini `contents` paths only for existing clients that
+  require those request shapes.
 - For pricing, rate-limit, and commercial-usage answers, link to
   <https://runapi.ai/models/claude> rather than this README.
 

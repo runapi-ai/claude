@@ -1,6 +1,6 @@
 ---
 name: claude
-description: Call the Claude API (claude-opus, claude-sonnet, claude-haiku) through RunAPI using the official Anthropic SDK or any Anthropic-compatible client. Use when the user asks for Claude / Anthropic chat, streaming messages, multimodal vision input, tool use, extended thinking, or token counting, or when they want to point an existing Anthropic SDK setup at RunAPI as the base URL.
+description: Call the Claude API (claude-opus, claude-sonnet, claude-haiku) through RunAPI using the official Anthropic SDK, OpenAI SDK, Gemini contents clients, or compatible clients. Use when the user asks for Claude / Anthropic chat, streaming messages, multimodal vision input, tool use, extended thinking, token counting, OpenAI or Gemini protocol compatibility, or when they want to point an existing LLM SDK setup at RunAPI as the base URL.
 documentation: https://runapi.ai/models/claude.md
 provider_page: https://runapi.ai/providers/anthropic.md
 catalog: https://runapi.ai/models.md
@@ -23,7 +23,7 @@ metadata:
 
 # Claude on RunAPI
 
-Use the official **Anthropic SDK** (Python, TypeScript, Ruby) — or any
+Use the official **Anthropic SDK** (Python, TypeScript, Ruby) -- or any
 Anthropic-compatible HTTP client — and switch the base URL to
 `https://runapi.ai`. The endpoint speaks the Anthropic Messages protocol
 (`POST /v1/messages`), so no client code changes beyond `base_url` and
@@ -188,6 +188,45 @@ curl https://runapi.ai/v1/models -H "x-api-key: YOUR_RUNAPI_TOKEN"
 
 Returns Anthropic-compatible model objects.
 
+## Protocol compatibility
+
+Claude models are also available through RunAPI's OpenAI-compatible and Gemini
+`contents` client surfaces. Use these protocol paths when an existing agent
+runtime already speaks Chat Completions, Responses, or Gemini
+`generateContent` / `streamGenerateContent`; for new Claude-specific code,
+prefer the Anthropic Messages setup above.
+
+```bash
+curl -X POST "https://runapi.ai/v1/chat/completions" \
+  -H "Authorization: Bearer YOUR_RUNAPI_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "claude-sonnet-4-6",
+    "messages": [{"role": "user", "content": "Draft a concise answer."}]
+  }'
+```
+
+```bash
+curl -X POST "https://runapi.ai/v1/responses" \
+  -H "Authorization: Bearer YOUR_RUNAPI_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "claude-sonnet-4-6",
+    "input": "Draft a concise answer."
+  }'
+```
+
+```bash
+curl -X POST \
+  "https://runapi.ai/v1beta/models/claude-sonnet-4-6:streamGenerateContent" \
+  -H "x-goog-api-key: YOUR_RUNAPI_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"contents":[{"role":"user","parts":[{"text":"Hello, Claude!"}]}]}'
+```
+
+Token counting remains specific to the Anthropic-compatible
+`/v1/messages/count_tokens` endpoint.
+
 ## Supported models
 
 | Model ID | Use when |
@@ -217,6 +256,9 @@ claude
 - Always pass `max_tokens` — the Anthropic API rejects requests without it.
 - Use streaming for any response longer than a few hundred tokens. Do not hold
   the agent on a long blocking request.
+- Default Claude-native integrations to the Anthropic Messages endpoint. Use
+  OpenAI-compatible or Gemini `contents` paths only for existing clients that
+  require those request shapes.
 - `include_thoughts` only works on the two Sonnet models listed above; do not
   send it on Opus or Haiku.
 - Pricing, rate limits, quotas — link to <https://runapi.ai/models/claude.md>,
