@@ -137,6 +137,7 @@ claude
 
 | Model ID | Notes |
 |---|---|
+| `claude-fable-5` | Flagship — state-of-the-art coding, reasoning, vision |
 | `claude-opus-4-8` | Strongest general model |
 | `claude-opus-4-7` | Previous Opus generation |
 | `claude-opus-4-6` | High-end reasoning |
@@ -144,6 +145,9 @@ claude
 | `claude-opus-4-5-20251101` | Dated Opus 4.5 snapshot |
 | `claude-sonnet-4-5-20250929` | Dated Sonnet 4.5 snapshot |
 | `claude-haiku-4-5-20251001` | Fastest lightweight snapshot |
+| `claude-opus-4-1-20250805` | Dated Opus 4.1 snapshot |
+| `claude-opus-4-20250514` | Dated Opus 4 snapshot |
+| `claude-sonnet-4-20250514` | Dated Sonnet 4 snapshot |
 
 Aliases that resolve to the dated snapshots: `claude-opus-4-5`,
 `claude-sonnet-4-5`, `claude-haiku-4-5`.
