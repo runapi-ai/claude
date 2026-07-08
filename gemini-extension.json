@@ -1,6 +1,6 @@
 {
   "name": "claude",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "RunAPI Claude API skill for Claude Code, Codex, Gemini CLI, Cursor, and 50+ agents",
   "skills": [
     {
