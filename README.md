@@ -147,8 +147,6 @@ claude
 | `claude-sonnet-4-5-20250929` | Dated Sonnet 4.5 snapshot |
 | `claude-haiku-4-5-20251001` | Fastest lightweight snapshot |
 | `claude-opus-4-1-20250805` | Dated Opus 4.1 snapshot |
-| `claude-opus-4-20250514` | Dated Opus 4 snapshot |
-| `claude-sonnet-4-20250514` | Dated Sonnet 4 snapshot |
 
 Aliases that resolve to the dated snapshots: `claude-opus-4-5`,
 `claude-sonnet-4-5`, `claude-haiku-4-5`.
