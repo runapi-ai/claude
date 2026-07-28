@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.12](https://github.com/runapi-ai/claude/releases/tag/v0.2.12) - 2026-07-28
+
+### Added
+- List claude-opus-5 in the model table so the skill surfaces the latest Opus tier.
+
+
 ## [v0.2.11](https://github.com/runapi-ai/claude/releases/tag/v0.2.11) - 2026-07-18
 
 ### Changed
