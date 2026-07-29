@@ -155,7 +155,7 @@ Aliases that resolve to the dated snapshots: `claude-opus-4-5`,
 ## Routing
 
 - Claude API on RunAPI: <https://runapi.ai/models/claude>
-- Claude API docs: <https://runapi.ai/docs#claude>
+- Claude API docs: <https://runapi.ai/docs/api/anthropic/messages>
 - Provider page: <https://runapi.ai/providers/anthropic>
 - Browse the full RunAPI catalog: <https://runapi.ai/models>
 - Skill repository: <https://github.com/runapi-ai/claude>
