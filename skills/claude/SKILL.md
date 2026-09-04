@@ -65,6 +65,7 @@ Load [compatibility protocols](references/compatibility-protocols.md) only when 
 
 | Model ID | Use when |
 |---|---|
+| `claude-fable-5-1` | — |
 | `claude-fable-5` | Flagship state-of-the-art coding, reasoning, and vision |
 | `claude-sonnet-5` | Near-Opus coding at Sonnet cost |
 | `claude-opus-5` | Latest Opus frontier reasoning |

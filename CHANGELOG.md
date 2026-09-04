@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.15](https://github.com/runapi-ai/claude/releases/tag/v0.2.15) - 2026-09-04
+
+### Added
+- Add claude-fable-5-1 to the supported model list.
+
+
 ## [v0.2.14](https://github.com/runapi-ai/claude/releases/tag/v0.2.14) - 2026-08-12
 
 ### Changed

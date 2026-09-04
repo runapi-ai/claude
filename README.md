@@ -137,6 +137,7 @@ claude
 
 | Model ID | Notes |
 |---|---|
+| `claude-fable-5-1` | — |
 | `claude-fable-5` | Flagship — state-of-the-art coding, reasoning, vision |
 | `claude-sonnet-5` | Near-Opus coding at Sonnet cost (1M context) |
 | `claude-opus-5` | Latest Opus — frontier reasoning |
