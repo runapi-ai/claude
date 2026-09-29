@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.16](https://github.com/runapi-ai/claude/releases/tag/v0.2.16) - 2026-09-29
+
+### Added
+- claude-opus-5-5 is listed among the supported Claude models and accepts Anthropic Messages, OpenAI Chat Completions, OpenAI Responses, and Gemini contents like the other current Claude models.
+
+
 ## [v0.2.15](https://github.com/runapi-ai/claude/releases/tag/v0.2.15) - 2026-09-04
 
 ### Added
