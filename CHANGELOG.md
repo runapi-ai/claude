@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.17](https://github.com/runapi-ai/claude/releases/tag/v0.2.17) - 2026-09-30
+
+### Changed
+- The supported model table now describes claude-opus-5-5 as the Claude model for long-running agentic coding and knowledge work.
+
+
 ## [v0.2.16](https://github.com/runapi-ai/claude/releases/tag/v0.2.16) - 2026-09-29
 
 ### Added
