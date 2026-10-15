@@ -1,5 +1,12 @@
 # Changelog
 
+## [v0.2.18](https://github.com/runapi-ai/claude/releases/tag/v0.2.18) - 2026-10-15
+
+### Added
+- The supported model table now lists claude-sonnet-5-5, served through Anthropic Messages, as the Sonnet 5 successor for everyday coding and agents.
+- The supported model table now lists claude-haiku-5-5, served through Anthropic Messages, as the lowest-cost Claude model with higher rates above 100K-token prompts.
+
+
 ## [v0.2.17](https://github.com/runapi-ai/claude/releases/tag/v0.2.17) - 2026-09-30
 
 ### Changed

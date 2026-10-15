@@ -139,6 +139,7 @@ claude
 |---|---|
 | `claude-fable-5-1` | — |
 | `claude-fable-5` | Flagship — state-of-the-art coding, reasoning, vision |
+| `claude-sonnet-5-5` | Sonnet 5 successor for everyday coding and agents (1M context) |
 | `claude-sonnet-5` | Near-Opus coding at Sonnet cost (1M context) |
 | `claude-opus-5` | Latest Opus — frontier reasoning |
 | `claude-opus-4-8` | Strongest general model |
@@ -147,6 +148,7 @@ claude
 | `claude-sonnet-4-6` | Balanced reasoning + speed |
 | `claude-opus-4-5-20251101` | Dated Opus 4.5 snapshot |
 | `claude-sonnet-4-5-20250929` | Dated Sonnet 4.5 snapshot |
+| `claude-haiku-5-5` | Lowest-cost Claude; higher rates above 100K-token prompts (1M context) |
 | `claude-haiku-4-5-20251001` | Fastest lightweight snapshot |
 | `claude-opus-4-1-20250805` | Dated Opus 4.1 snapshot |
 | `claude-opus-5-5` | Long-running agentic coding and knowledge work |
